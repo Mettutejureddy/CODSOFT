@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobHunt Pro | Job Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">JobHunt<span>Pro</span></div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#jobs">Browse Jobs</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#apply">Apply</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#post" class="post-btn">Post a Job</a>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="tagline">5000+ Jobs Listed</p>
+
+        <h1>Find Your Dream Job Today</h1>
+
+        <p class="hero-text">
+            Discover top opportunities in Software Development, UI/UX Design,
+            Data Analytics and Marketing from leading companies.
+        </p>
+
+        <div class="hero-buttons">
+            <label class="resume-btn">
+                Upload Your Resume
+                <input type="file" hidden>
+            </label>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search Job Title">
+
+            <select id="categoryFilter">
+                <option value="All">All Categories</option>
+                <option value="Development">Development</option>
+                <option value="Design">Design</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Data">Data</option>
+            </select>
+
+            <button onclick="searchJobs()">Find Job</button>
+        </div>
+    </div>
+</section>
+
+<section class="stats">
+    <div>
+        <h2>5K+</h2>
+        <p>Jobs Posted</p>
+    </div>
+
+    <div>
+        <h2>2K+</h2>
+        <p>Companies</p>
+    </div>
+
+    <div>
+        <h2>10K+</h2>
+        <p>Applicants</p>
+    </div>
+</section>
+
+<section class="jobs-section" id="jobs">
+    <h2>Featured Jobs</h2>
+    <p class="section-subtitle">Explore latest openings and apply instantly</p>
+
+    <div class="jobs-container" id="jobsContainer"></div>
+</section>
+
+<section class="dashboard" id="dashboard">
+    <h2>Candidate & Employer Dashboard</h2>
+
+    <div class="dashboard-grid">
+        <div class="dash-card">
+            <h3>Candidate Profile</h3>
+            <p>Create your profile, upload resume, and track job applications.</p>
+        </div>
+
+        <div class="dash-card">
+            <h3>Employer Panel</h3>
+            <p>Post job openings, manage applications, and shortlist candidates.</p>
+        </div>
+
+        <div class="dash-card">
+            <h3>Application Tracking</h3>
+            <p>View applied jobs, interview status, and notification updates.</p>
+        </div>
+    </div>
+</section>
+
+<section class="apply-section" id="apply">
+    <h2>Apply For a Job</h2>
+
+    <form class="apply-form">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="text" placeholder="Job Role" required>
+        <input type="file">
+        <textarea placeholder="Why should we hire you?"></textarea>
+        <button type="submit">Submit Application</button>
+    </form>
+</section>
+
+<section class="post-job" id="post">
+    <h2>Post a Job</h2>
+
+    <form class="apply-form">
+        <input type="text" placeholder="Company Name" required>
+        <input type="text" placeholder="Job Title" required>
+        <input type="text" placeholder="Location" required>
+
+        <select>
+            <option>Development</option>
+            <option>Design</option>
+            <option>Marketing</option>
+            <option>Data</option>
+        </select>
+
+        <textarea placeholder="Job Description"></textarea>
+        <button type="submit">Post Job</button>
+    </form>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>Email: mettutejaswini2005@gmail.com</p>
+    <p>GitHub: github.com/Mettutejureddy45</p>
+</section>
+
+<footer>
+    <p>© 2026 JobHunt Pro | Developed by Mettu Tejaswini</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

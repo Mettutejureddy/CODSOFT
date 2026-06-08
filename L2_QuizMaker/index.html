@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizVerse | Online Quiz Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <section class="welcome-screen" id="welcomeScreen">
+        <div class="glass-card">
+            <p class="tagline">Online Quiz Maker</p>
+            <h1>Quiz<span>Verse</span></h1>
+
+            <p class="subtitle">
+                Challenge your skills with an interactive web development quiz and track your performance instantly.
+            </p>
+
+            <div class="features">
+                <div>10 MCQs</div>
+                <div>Live Scoring</div>
+                <div>Progress Tracking</div>
+            </div>
+
+            <button onclick="startQuiz()" class="start-btn">Start Quiz</button>
+        </div>
+    </section>
+
+    <section class="quiz-screen hide" id="quizScreen">
+        <div class="quiz-card">
+
+            <div class="quiz-header">
+                <div>
+                    <p class="small-title">Web Development Quiz</p>
+                    <h2 id="questionNumber">Question 1</h2>
+                </div>
+
+                <div class="score-box">
+                    Score: <span id="liveScore">0</span>
+                </div>
+            </div>
+
+            <div class="progress-area">
+                <p id="progressText">Question 1 of 10</p>
+                <div class="progress-bar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+
+            <h3 id="question">Question text appears here</h3>
+
+            <div class="options" id="options"></div>
+
+            <button id="nextBtn" onclick="nextQuestion()" class="next-btn">Next Question</button>
+        </div>
+    </section>
+
+    <section class="result-screen hide" id="resultScreen">
+        <div class="glass-card result-card">
+            <p class="tagline">Performance Report</p>
+            <h1>Congratulations!</h1>
+            <p class="completion-text">
+    You have successfully completed the QuizVerse Challenge.
+            </p>
+
+            <div class="score-circle">
+                <span id="scoreText">0/10</span>
+            </div>
+
+            <h2 id="message">Great Job!</h2>
+            <p id="percentageText">You scored 0%</p>
+
+            <div class="result-actions">
+    <button onclick="restartQuiz()" class="start-btn">
+        Restart Quiz
+    </button>
+
+    <button onclick="goHome()" class="outline-btn">
+        Back Home
+    </button>
+</div>
+            <footer class="footer">
+                © 2026 QuizVerse | Developed by Mettu Tejaswini
+            </footer>
+        </div>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

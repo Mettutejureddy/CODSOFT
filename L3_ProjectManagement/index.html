@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow Pro | Project Management Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">TaskFlow<span>Pro</span></div>
+
+    <nav>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#tasks">Tasks</a>
+        <a href="#addTask">Add Task</a>
+        <a href="#team">Team</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <p class="tagline">Project Management Tool</p>
+        <h1>Plan, Assign & Track Your Projects Easily</h1>
+        <p>
+            Manage project tasks, deadlines, team members, and progress in one modern dashboard.
+        </p>
+        <a href="#addTask" class="hero-btn">Create Task</a>
+    </div>
+</section>
+
+<section class="dashboard" id="dashboard">
+    <h2>Project Dashboard</h2>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <h3 id="totalTasks">0</h3>
+            <p>Total Tasks</p>
+        </div>
+
+        <div class="stat-card">
+            <h3 id="pendingTasks">0</h3>
+            <p>Pending</p>
+        </div>
+
+        <div class="stat-card">
+            <h3 id="progressTasks">0</h3>
+            <p>In Progress</p>
+        </div>
+
+        <div class="stat-card">
+            <h3 id="completedTasks">0</h3>
+            <p>Completed</p>
+        </div>
+    </div>
+</section>
+
+<section class="task-section" id="tasks">
+    <h2>Project Tasks</h2>
+    <p class="section-subtitle">Track assigned tasks and progress</p>
+
+    <div class="task-container" id="taskContainer"></div>
+</section>
+
+<section class="add-task" id="addTask">
+    <h2>Add New Task</h2>
+
+    <form class="task-form" id="taskForm">
+        <input type="text" id="taskTitle" placeholder="Task Title" required>
+
+        <input type="text" id="projectName" placeholder="Project Name" required>
+
+        <select id="assignedTo" required>
+            <option value="">Assign To</option>
+            <option value="Mettu Tejaswini">Mettu Tejaswini</option>
+            <option value="Vasundhara">Vasundhara</option>
+            <option value="Bhavana">Bhavana</option>
+            <option value="Shreevijaya">Shreevijaya</option>
+        </select>
+
+        <input type="date" id="deadline" required>
+
+        <select id="status" required>
+            <option value="">Task Status</option>
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+        </select>
+
+        <textarea id="description" placeholder="Task Description" required></textarea>
+
+        <button type="submit">Add Task</button>
+    </form>
+</section>
+
+<section class="team" id="team">
+    <h2>Team Members</h2>
+
+    <div class="team-grid">
+        <div class="team-card">
+            <div class="avatar">T</div>
+            <h3>Mettu Tejaswini</h3>
+            <p>Frontend Developer</p>
+        </div>
+
+        <div class="team-card">
+            <div class="avatar">V</div>
+            <h3>Vasundhara</h3>
+            <p>UI Designer</p>
+        </div>
+
+        <div class="team-card">
+            <div class="avatar">B</div>
+            <h3>Bhavana</h3>
+            <p>Backend Developer</p>
+        </div>
+
+        <div class="team-card">
+            <div class="avatar">S</div>
+            <h3>Shreevijaya</h3>
+            <p>Project Analyst</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 TaskFlow Pro | Developed by Mettu Tejaswini</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
